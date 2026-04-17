@@ -32,7 +32,16 @@ public class ProductPage extends AbstractComponent{
 	WebElement successMessage;
 	@FindBy (css="button[routerlink*='cart']")
 	WebElement cart;
+	@FindBy (xpath="//ul/li[1]//button[normalize-space(.='HOME')]")
+	WebElement homeHeader;
+	//
 	
+	
+	public Boolean verifyLoginSuccessfull() {
+		Boolean header=homeHeader.isDisplayed();
+		return header;
+		
+	}
 	public List<WebElement> getProductList() {
 		return products;
 	}

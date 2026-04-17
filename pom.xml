@@ -36,9 +36,11 @@
                 <configuration>
                     <source>23</source>
                     <target>23</target>
+                    <useIncrementalCompilation>false</useIncrementalCompilation>
                 </configuration>
             </plugin>
-        </plugins> </build>
+        </plugins> 
+        </build>
 
     <profiles>
         <profile>

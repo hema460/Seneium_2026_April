@@ -29,16 +29,22 @@ import rahulshettyacademy.Test.Retry;
 
 public class StandAloneTest extends BaseTest {
 	
-	 
+	ProductPage productPage;
 
 	public StandAloneTest() throws IOException {
 		super();
 	}
-
+	@Test
+	public void verifyLogin() {
+		productPage=landingPage.loginApplication(prop.getProperty("userEmail"),prop.getProperty("password"));
+		Boolean loginCheck=productPage.verifyLoginSuccessfull();
+		Assert.assertTrue(loginCheck);
+	}
+	
 		@Test(retryAnalyzer=Retry.class)
 	public void login() throws InterruptedException {
 		String productName="ZARA COAT 3";
-		ProductPage productPage=landingPage.loginApplication(prop.getProperty("userEmail"),prop.getProperty("password"));
+		 productPage=landingPage.loginApplication(prop.getProperty("userEmail"),prop.getProperty("password"));
 		List<WebElement>products=productPage.getProductList();
 		productPage.getProductByName(productName);
 		productPage.addProductToCart(productName);
@@ -60,6 +66,6 @@ public class StandAloneTest extends BaseTest {
 		//	driver.close();
 
 	}
-	
+		
 
 }
