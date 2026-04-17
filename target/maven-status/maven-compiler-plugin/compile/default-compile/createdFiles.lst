@@ -1,0 +1,6 @@
+rahulshettyacademy\PageObjects\LandingPage.class
+rahulshettyacademy\PageObjects\PaymentPage.class
+rahulshettyacademy\PageObjects\ProductPage.class
+rahulshettyacademy\AbstractComponent\AbstractComponent.class
+rahulshettyacademy\PageObjects\CheckoutPage.class
+rahulshettyacademy\PageObjects\OrderConfirmationPage.class

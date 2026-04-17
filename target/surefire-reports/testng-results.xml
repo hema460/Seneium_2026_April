@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-17T17:37:41 CDT" name="Suite" finished-at="2026-04-17T17:37:55 CDT" duration-ms="13582">
+    <groups>
+    </groups>
+    <test started-at="2026-04-17T17:37:41 CDT" name="Test" finished-at="2026-04-17T17:37:55 CDT" duration-ms="13582">
+      <class name="rahulshettyacademy.StandAloneTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.StandAloneTest@5c80cf32]" started-at="2026-04-17T17:37:41 CDT" name="launchApplication" finished-at="2026-04-17T17:37:48 CDT" duration-ms="6312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="login()[pri:0, instance:rahulshettyacademy.StandAloneTest@5c80cf32]" started-at="2026-04-17T17:37:48 CDT" name="login" finished-at="2026-04-17T17:37:55 CDT" duration-ms="7008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.StandAloneTest@5c80cf32]" started-at="2026-04-17T17:37:55 CDT" name="tearDown" finished-at="2026-04-17T17:37:55 CDT" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- rahulshettyacademy.StandAloneTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
