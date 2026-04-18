@@ -25,7 +25,7 @@ pipeline {
             // This runs even if a test fails in the previous stage
             publishHTML target: [
                reportName: 'Test Report',
-            reportDir:  'target/surefire-reports',
+            reportDir:  'Screenshots',
             reportFiles: 'index.html'
             ]
         }
