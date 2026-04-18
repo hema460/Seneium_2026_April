@@ -14,7 +14,7 @@ pipeline {
         stage('Build & Test') {
             steps {
                 // 'bat' is for Windows; use 'sh' for Linux/Mac
-                bat 'mvn clean test'
+                bat "mvn clean test -PRegression -Dbrowser=${browserName}"
             }
         }
     }
