@@ -34,14 +34,14 @@ public class StandAloneTest extends BaseTest {
 	public StandAloneTest() throws IOException {
 		super();
 	}
-	@Test
+	@Test(priority=1)
 	public void verifyLogin() {
 		productPage=landingPage.loginApplication(prop.getProperty("userEmail"),prop.getProperty("password"));
 		Boolean loginCheck=productPage.verifyLoginSuccessfull();
 		Assert.assertTrue(loginCheck);
 	}
 	
-		@Test(retryAnalyzer=Retry.class)
+		@Test(priority=2,retryAnalyzer=Retry.class)
 	public void login() throws InterruptedException {
 		String productName="ZARA COAT 3";
 		 productPage=landingPage.loginApplication(prop.getProperty("userEmail"),prop.getProperty("password"));
